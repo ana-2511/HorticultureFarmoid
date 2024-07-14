@@ -48,9 +48,9 @@ st.markdown(
 )
 
 # Load the crop data and the random forest model
-crop_data = pd.read_csv("E:\\farmoid\\New india App\\new_Clean_horticulture.csv")
-model = joblib.load("E:\\farmoid\\New india App\\xgb_hort_model_.pkl")
-scaler = joblib.load("E:\\farmoid\\New india App\\scaler.pkl")
+crop_data = pd.read_csv("new_Clean_horticulture.csv")
+model = joblib.load("xgb_hort_comp_model.pkl.gz")
+scaler = joblib.load("scaler.pkl")
 
 # Get the list of unique crops and states from the dataset
 crop_list = crop_data['Crop'].unique()
