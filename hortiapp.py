@@ -49,7 +49,7 @@ st.markdown(
 
 # Load the crop data and the random forest model
 crop_data = pd.read_csv("new_Clean_horticulture.csv")
-model = joblib.load("xgb_hort_model_.pkl")
+model = joblib.load("xgb_hort_comp_model.pkl.gz")
 scaler = joblib.load("scaler.pkl")
 
 # Get the list of unique crops and states from the dataset
