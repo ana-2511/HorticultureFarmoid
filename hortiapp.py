@@ -110,7 +110,7 @@ def main():
         if st.button(t('Submit')):
             if username:
                 st.session_state['username'] = username
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.warning(t('Please enter a username.'))
     else:
@@ -119,7 +119,7 @@ def main():
         # Add a logout button
         if st.button(t('Logout')):
             st.session_state['username'] = ''
-            st.experimental_rerun()
+            st.rerun()
 
         st.markdown("---")
 
